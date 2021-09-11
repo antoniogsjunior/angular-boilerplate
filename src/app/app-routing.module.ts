@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BaseComponent } from './layouts/base/base.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
-
 const routes: Routes = [
   {
     path: '',
