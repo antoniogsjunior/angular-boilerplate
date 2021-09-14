@@ -15,12 +15,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './layouts/app/app.component';
 import { BaseComponent } from './layouts/base/base.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import { Intercept } from './shared/http/intercept';
+
 @NgModule({
   declarations: [AppComponent, BaseComponent, DashboardComponent],
   imports: [
@@ -40,7 +42,8 @@ import { Intercept } from './shared/http/intercept';
     MatBadgeModule,
     MatListModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    TranslateModule.forRoot()
   ],
   providers: [
     {

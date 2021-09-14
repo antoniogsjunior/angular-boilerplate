@@ -10,10 +10,14 @@
     <mat-sidenav #sidenav mode="side" opened [attr.color]="themeColor">
       <mat-nav-list>
         <h1>Sidenav</h1>
-        <a mat-list-item href="#">Link 1</a>
-        <a mat-list-item href="#">Link 2</a>
-        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">{{ 'LIST.LINK1' | translate }}</a>
+        <a mat-list-item href="#">{{ 'LIST.LINK2' | translate }}</a>
+        <a mat-list-item href="#">{{ 'LIST.LINK3' | translate }}</a>
       </mat-nav-list>
+      <select #langSelect (change)="setLa(langSelect.value)">
+        <option value="en">EN</option>
+        <option value="ptBr">ptBr</option>
+      </select>
     </mat-sidenav>
     <mat-sidenav-content>
       <router-outlet></router-outlet>
