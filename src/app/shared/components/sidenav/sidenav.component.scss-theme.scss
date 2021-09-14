@@ -1,0 +1,12 @@
+@import "~@angular/material/theming";
+@mixin sidenav-component-theme($config-or-theme) {
+
+  $config: mat-get-color-config($config-or-theme);
+  $foreground: map-get($config, foreground);
+  $background: map-get($config, background);
+
+  .mat-drawer {
+    background-color: mat-color($background, app-bar);
+    color: mat-color($foreground, text);
+  }
+}
