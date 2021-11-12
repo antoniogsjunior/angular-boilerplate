@@ -1,6 +1,7 @@
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './layouts/app/app.component';
@@ -17,6 +18,7 @@ import { ThemeModule } from './theme/theme.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    TranslateModule.forRoot(),
     ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
       active: 'light'
