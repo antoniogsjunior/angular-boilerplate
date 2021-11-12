@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { ThemeService } from '../../theme/theme.service';
 
 @Component({
   selector: 'app-base',
@@ -6,5 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./base.component.scss']
 })
 export class BaseComponent {
-  constructor() {}
+  constructor(private themeService: ThemeService) {}
+
+  toggle() {
+    const active = this.themeService.getActiveTheme();
+    if (active.name === 'light') {
+      this.themeService.setTheme('dark');
+    } else {
+      this.themeService.setTheme('light');
+    }
+  }
 }
