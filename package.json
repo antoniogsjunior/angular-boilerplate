@@ -26,7 +26,7 @@
     "@angular/router": "~13.1.0",
     "@ngx-translate/core": "^14.0.0",
     "ngx-notification-msg": "^0.2.2",
-    "rxjs": "~6.6.0",
+    "rxjs": "^7.5.2",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
