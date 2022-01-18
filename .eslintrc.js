@@ -2,7 +2,7 @@ const prettierConfig = require('./.prettierrc.js');
 
 module.exports = {
   root: true,
-  parserOptions: { ecmaVersion: 2021 },
+  parserOptions: { ecmaVersion: 2021, warnOnUnsupportedTypeScriptVersion: false},
   overrides: [
     {
       files: ['*.ts'],
